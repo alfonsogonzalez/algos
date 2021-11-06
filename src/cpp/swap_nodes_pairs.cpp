@@ -15,13 +15,9 @@ ListNode::ListNode( int val ) : val( val ), next( nullptr ) {};
 ListNode::ListNode( int val, ListNode* next ) : val( val ), next( next ) {};
 
 ListNode* swap_nodes_pairs( ListNode* head ) {
-  if ( head ) {
-    if ( head->next ) {
-      std::swap( head->val, head->next->val );
-      if ( head->next->next ) {
-        swap_nodes_pairs( head->next->next );
-      }
-    }
+  if ( head && head->next ) {
+    std::swap( head->val, head->next->val );
+    swap_nodes_pairs( head->next->next );
   }
   return head;
 }
