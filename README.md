@@ -43,6 +43,19 @@ Each standalone script is accompanied by a `bash` script that:
 
 One can replace "g++" with "clang++" in the `bash` scripts if desired.
 
+These `bash` scripts use an environment variable `ALGOS` that points to the `src` directory of this repository. This variable can be easily set with the `export` command. For example:
+```sh
+$ export ALGOS=/home/alfonso/pub/algos/src
+```
+
+Once the `ALGOS` environment variable is set, one can run the bash scripts from any directory. For example, from the base of this repository:
+```sh
+$ ./src/cpp/standalone/reverse_string_run.sh
+13
+astrodynamics
+scimanydortsa
+```
+
 ## Unit Tests
 Both the C++ and Python portions of this repository have unit tests implemented. The C++ portion uses [GoogleTest](https://google.github.io/googletest/) and the Python portion uses `pytest`.
 
