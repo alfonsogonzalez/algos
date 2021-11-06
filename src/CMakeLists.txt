@@ -1,7 +1,8 @@
 cmake_minimum_required( VERSION 3.14 )
 project( algos CXX )
 
-set( CMAKE_CXX_STANDARD 11 )
+set( cmake_cxx_flags "-Wall -Wextra -Werror -std=c++17" )
+set( cmake_cxx_standard_required 17 )
 set( cmake_position_independent on )
 
 include( FetchContent )
