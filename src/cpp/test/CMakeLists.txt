@@ -9,6 +9,16 @@ add_test(
 	COMMAND reverse_string.t
 )
 
+add_executable( ListNode.t ListNode.t.cpp )
+target_link_libraries( ListNode.t PUBLIC
+	gtest_main
+	algos
+)
+add_test(
+	NAME ListNode.t
+	COMMAND ListNode.t
+)
+
 add_executable( swap_nodes_pairs.t swap_nodes_pairs.t.cpp )
 target_link_libraries( swap_nodes_pairs.t PUBLIC
 	gtest_main
