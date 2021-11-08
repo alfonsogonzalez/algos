@@ -28,3 +28,13 @@ add_test(
 	NAME swap_nodes_pairs.t
 	COMMAND swap_nodes_pairs.t
 )
+
+add_executable( reverse_linked_list.t reverse_linked_list.t.cpp )
+target_link_libraries( reverse_linked_list.t PUBLIC
+	gtest_main
+	algos
+)
+add_test(
+	NAME reverse_linked_list.t
+	COMMAND reverse_linked_list.t
+)
