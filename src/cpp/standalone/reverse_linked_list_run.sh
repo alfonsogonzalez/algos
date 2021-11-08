@@ -2,8 +2,8 @@
 
 path=${ALGOS}/cpp
 
-g++ ${path}/standalone/swap_nodes_pairs_sa.cpp \
-${path}/swap_nodes_pairs.cpp \
+g++ ${path}/standalone/reverse_linked_list_sa.cpp \
+${path}/reverse_linked_list.cpp \
 ${path}/ListNode.cpp \
 -o ${path}/standalone/a.out
 
