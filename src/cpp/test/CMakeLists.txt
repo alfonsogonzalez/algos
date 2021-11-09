@@ -48,3 +48,13 @@ add_test(
 	NAME factorial.t
 	COMMAND factorial.t
 )
+
+add_executable( fib.t fib.t.cpp )
+target_link_libraries( fib.t PUBLIC
+	gtest_main
+	algos
+)
+add_test(
+	NAME fib.t
+	COMMAND fib.t
+)
