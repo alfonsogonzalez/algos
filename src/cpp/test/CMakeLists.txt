@@ -38,3 +38,13 @@ add_test(
 	NAME reverse_linked_list.t
 	COMMAND reverse_linked_list.t
 )
+
+add_executable( factorial.t factorial.t.cpp )
+target_link_libraries( factorial.t PUBLIC
+	gtest_main
+	algos
+)
+add_test(
+	NAME factorial.t
+	COMMAND factorial.t
+)
