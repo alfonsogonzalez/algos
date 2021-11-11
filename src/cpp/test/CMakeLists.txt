@@ -58,3 +58,13 @@ add_test(
 	NAME fib.t
 	COMMAND fib.t
 )
+
+add_executable( BinTreeTraverser.t BinTreeTraverser.t.cpp )
+target_link_libraries( BinTreeTraverser.t PUBLIC
+	gtest_main
+	algos
+)
+add_test(
+	NAME BinTreeTraverser.t
+	COMMAND BinTreeTraverser.t
+)
