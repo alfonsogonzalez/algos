@@ -12,7 +12,12 @@ def test_reverse_string_basic_usage():
 	word = [ l for l in 'astrodynamics' ]
 	rev  = 'scimanydortsa'
 
+	print( ''.join( word ) )
 	reverse_string( word )
+	print( ''.join( word ) )
 
 	for n in range( len( rev ) ):
 		assert word[ n ] == rev[ n ]
+
+if __name__ == '__main__':
+	test_reverse_string_basic_usage()
